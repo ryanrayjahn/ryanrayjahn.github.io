@@ -1,0 +1,60 @@
+table {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    border: dotted black 3px;
+}
+th {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  align-self: center;
+  height: 50px;
+  min-width: 100px;
+}
+td {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  align-self: center;
+  min-width: 100px;
+}
+
+th.Achievement {
+  background-color: yellow;
+}
+
+th.Experience{
+  background-color: orange
+}
+
+th.Certification {
+  background-color: lightgreen;
+}
+
+th.Program {
+  background-color: lightpink;
+}
+
+td.Achievement {
+  background-color: yellow;
+}
+
+td:hover {
+  font-weight: bold;
+}
+
+td.Experience {
+  background-color: orange;
+}
+
+td.Certification {
+  background-color: lightgreen;
+  overflow: scroll;
+}
+
+td.Program {
+  background-color: lightpink;
+}

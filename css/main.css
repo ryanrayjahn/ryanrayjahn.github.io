@@ -1,0 +1,99 @@
+div.navigation{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  width: 100%;
+  background-color: black;
+  padding: 1px;
+}
+
+nav{
+  background-color: yellow;
+}
+
+ul.navigate {
+  border: solid black 5px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow: hidden;
+  background-color: #333;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+li.navigate{
+  float: left;
+  border-right: 2px solid blue;
+  font-size: 30px;
+}
+
+
+li.navigate:first-child{
+  border-left: 2px solid blue;
+}
+
+li.navigate:last-child{
+  border-right: 2px solid blue;
+}
+
+li a.navigate{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+li a.navigates{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+li a.navigate-active{
+  display: block;
+  color: white;
+  background-color: #4CAF50;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+li a.navigate:hover{
+    background-color: #111;
+    color: yellow;
+}
+
+li a.navigates:hover{
+    background-color: #111;
+    color: yellow;
+}
+
+li a.navigate-active:hover{
+    color: yellow;
+}
+
+
+/*
+li a.navigate:visited{
+  color: purple;
+}
+
+li a.navigate:link{
+  color: black;
+}
+
+li a.navigate:active{
+  color: black;
+  background-color: white;
+}
+*/

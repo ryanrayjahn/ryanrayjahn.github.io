@@ -1,7 +1,63 @@
+.table{
+    background-color: lightblue;
+    width: 100%;
+    border: 10px solid black;
+    min-width: 1200px;
+}
+
+.search{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: stretch;
+  align-self: stretch;
+  align-content: stretch;
+
+}
+
+.searchbox{
+    width: 50%;
+    min-width: 200px;
+    height: 40px;
+    font-size: 25px;
+}
+
+.topic{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    background-color: red;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content{
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  background-color: green;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.searching{
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
 table {
     align-self: center;
     text-align: center;
     width: 100%;
+    min-width: 500px;
+    min-height: 500px;
+    max-width: 100%;
     border: dotted black 3px;
 }
 th {
@@ -11,15 +67,17 @@ th {
   padding: 20px;
   align-self: center;
   height: 50px;
-  min-width: 100px;
+  min-width: 125px;
+  max-width: 25%;
 }
 td {
+  max-width: 25%;
   border: 1px solid black;
   text-align: center;
   font-size: 30px;
   padding: 20px;
   align-self: center;
-  min-width: 100px;
+  min-width: 125px;
 }
 
 th.Achievement {
@@ -53,6 +111,7 @@ td.Experience {
 td.Certification {
   background-color: lightgreen;
   overflow: scroll;
+
 }
 
 td.Program {

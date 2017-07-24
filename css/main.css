@@ -1,13 +1,19 @@
+body{
+  min-width: 500px;
+}
+
 div.navigation{
   padding-top: 1px;
   padding-bottom: 1px;
   width: 100%;
   background-color: black;
   padding: 1px;
+
 }
 
 nav{
   background-color: yellow;
+
 }
 
 ul.navigate {
@@ -16,6 +22,7 @@ ul.navigate {
   top: 0%;
   left: 0%;
   width: 100%;
+  min-width: 500px;
   list-style-type: none;
   margin: 0;
   padding-left: 20%;

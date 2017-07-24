@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title> Certifications </title>
     <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/profile.css">
     <script type="text/javascript" src="js/script.js">
 
     </script>
+    <script type="text/javascript" src="js/profile.js">
+
+    </script>
   </head>
   <body style="background-color: wheat;">
+    <center>
     <div id="navigation" class="nav">
     <nav>
+    <center>
     <ul id="navigate" class="navigate">
     <li id="navigate" class="navigate"><a  class="navigate" href="index.html"> Home </a></li>
     <li id="navigate" class="navigate"><a  class="navigate" href="resume.html"> Resume </a></li>
     <li id="navigate" class="navigate"><a  class="navigate-active" href="profile.html"> Profile </a></li>
     </ul>
+  </center>
     </nav>
+  </center>
     </div>
     </head>
-    <body>
+    <body id="body" class="body">
       <br>
       <br>
       <br>
       <br>
       <br>
       <br>
-    <table>
+    <center>
+    <div id="table" class="table">
+    <div class="search">
+    <input  type="search" id="searchbox" class="searchbox" placeholder="Search" onkeydown="myFunction()"/>
+    <input type="button" value="Topic" class="topic"/>
+    <input type="button" value="Content" class="content"/>
+    <input type="button" value="Search" class="searching"/>
+  </div>
+    <table id="table">
     <tr>
     <th class="Achievement">Achievement</th>
     <th class="Experience">Experience</th>
@@ -37,7 +52,7 @@
     <tr>
     <td class="Achievement">BPA: Place 2nd in Regional for Java Programming</td>
     <td class="Experience">Built a fully functioning calculator and hangman game in Python</td>
-    <td class="Certification">CIW JavaScript</td>
+    <td class="Certification">CIW JavaScript, Precision Exams: Java, Precision Exams: Python, and Precision Exams: Digital Media</td>
     <td class="Program">McFatter Technical College: Java Porgramming</td>
     </tr>
     <tr>
@@ -54,5 +69,6 @@
     </tr>
     </table>
     </div>
+  </center>
   </body>
 </html>

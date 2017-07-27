@@ -107,11 +107,11 @@ $(document).ready(function(){
 
 
 function hide(){
-  document.getElementById('ghost').style.visibility = "hidden";
+  document.getElementById('Haunters').style.visibility = "hidden";
 }
 
 function show() {
-document.getElementById('ghost').style.visibility = "visible";
+document.getElementById('Haunters').style.visibility = "visible";
 }
 
 function pikachuOn(){
@@ -196,6 +196,35 @@ function Venusaur(){
  document.getElementById('Venusaur').style.visibility = "visible";
  document.getElementById('Venusaur').style.display = "block";
    document.getElementById('Venusaurs').innerHTML = "";
+ }
+}
+
+function Haunterin(){
+  document.getElementById('ghost').style.visibility = "hidden";
+  document.getElementById('ghost').style.display = "none";
+  var haunter = "Haunter is a ghost pokemon which can disappear before your very eyes.";
+  document.getElementById('Haunters').innerHTML = haunter;
+ }
+
+ function Haunterout() {
+ document.getElementById('ghost').style.visibility = "visible";
+ document.getElementById('ghost').style.display = "block";
+ document.getElementById('Haunters').innerHTML = "";
+ }
+
+
+function Porygon(){
+  clickpo++;
+  if (clickpo % 2 == 1){
+  document.getElementById('Porygon').style.visibility = "hidden";
+  document.getElementById('Porygon').style.display = "none";
+  var haunter = "Porygon is a shape shifting pokemon which can disfigure his shape.";
+  document.getElementById('Porygons').innerHTML = haunter;
+ }
+ else {
+ document.getElementById('Porygon').style.visibility = "visible";
+ document.getElementById('Porygon').style.display = "block";
+ document.getElementById('Porygons').innerHTML = "";
  }
 }
 

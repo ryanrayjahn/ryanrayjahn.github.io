@@ -101,7 +101,7 @@ document.getElementById('Pikachus').innerHTML = "";
 
 function Charizard(){
   clickc++;
-  if (clickp % 2 == 1){
+  if (clickc % 2 == 1){
   document.getElementById('Charizard').style.visibility = "hidden";
   document.getElementById('Charizard').style.display = "none";
   var charizard = "Charizard is a dragon pokemon that can breathe fire and has the ability to fly.";
@@ -110,7 +110,7 @@ function Charizard(){
  else {
  document.getElementById('Charizard').style.visibility = "visible";
  document.getElementById('Charizard').style.display = "block";
-   document.getElementById('Charizards').innerHTML = "";
+ document.getElementById('Charizards').innerHTML = "";
  }
 }
 
@@ -142,4 +142,27 @@ function Venusaur(){
  document.getElementById('Venusaur').style.display = "block";
    document.getElementById('Venusaurs').innerHTML = "";
  }
+}
+
+  number = 40;
+  document.getElementById("scale").value = number;
+  document.getElementById("number").value = number;
+function increaseScale(){
+  number = document.getElementById("scale").value;
+  document.getElementById("number").value = document.getElementById("scale").value;
+  document.getElementById("hire").style.fontSize = number.toString() + "px";
+}
+
+function increaseNumber(){
+  number = document.getElementById("number").value;
+  document.getElementById("scale").value = document.getElementById("number").value;
+  if (number > 80){
+    number = 80;
+    document.getElementById("number").value = number;
+  }
+  if (number < 30){
+    number = 30;
+    document.getElementById("number").value = number;
+  }
+  document.getElementById("hire").style.fontSize = number.toString() + "px";
 }

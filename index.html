@@ -8,9 +8,9 @@
 
     </script>
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js">
-    </script>
+
   </head>
+
   <body>
   <div id="navigation" class="navigation">
   <nav>
@@ -22,6 +22,12 @@
   </nav>
   </div>
   <h1>Ryan's Home Page</h1>
+  <h3 id="hire">Why You Should Hire me?</h3>
+  <br>
+  <center>
+  <span id="size">Importance:</span><input id="scale" type="range" name="size" min="30" max="80" onchange="increaseScale();">
+  <input id="number" class="size" type="number" min="30" max="80" step="2" onchange="increaseNumber();">
+  </center>
   <br>
   <center><button value="Click Here" onclick="myFunction()">CLick Here</button></center>
   <br>
@@ -75,4 +81,6 @@
 
       </center>
   </body>
+  <script type="text/javascript" src="js/index.js">
+  </script>
 </html>

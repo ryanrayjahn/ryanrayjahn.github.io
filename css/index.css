@@ -29,6 +29,28 @@ h1{
   text-shadow: 2px 2px 5px blue;
 }
 
+h3{
+  color: white;
+  font-size: 40px;
+  font-family: verdana;
+  text-align: center;
+  text-shadow: 5px 5px 10px red;
+  font-weight: bold;
+  border: 3px solid black;
+  background-color: blue;
+}
+
+.size{
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+}
+
+.size, #size{
+  color: black;
+  font-size: 25px;
+}
+
 @keyframes flip{
   0%{ transform: rotateY(0deg);}
   50%{ transform: rotateY(180deg);}

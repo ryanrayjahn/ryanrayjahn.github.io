@@ -107,7 +107,10 @@
 
   img{
     width: 100%;
+    min-width: 200px;
     height: 20em;
+    min-height: 300px;
+    max-height: 500px;
   }
 
   @keyframes flip{

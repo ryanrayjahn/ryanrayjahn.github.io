@@ -7,6 +7,7 @@
     <script type="text/javascript" src="js/script.js">
 
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
 
   </head>
@@ -22,6 +23,7 @@
   </nav>
   </div>
   <h1>Ryan's Home Page</h1>
+  <noscript>Please Enable JavaScript to your browser so javascript can function properly.</noscript>
   <h3 id="hire">Why You Should Hire me?</h3>
   <br>
   <center>
@@ -29,8 +31,27 @@
   <input id="number" class="size" type="number" min="30" max="80" step="2" onchange="increaseNumber();">
   </center>
   <br>
-  <center><button value="Click Here" onclick="myFunction()">CLick Here</button></center>
+  <center><button value="Click Here" onclick="myFunction()" id="button">CLick Here</button></center>
   <br>
+
+  <p class="hire" id="hire1" style="display: none;">I built various application using Java, Python, and Ruby.</p>
+  <p class="hire" id="hire2" style="display: none;">I created and deployed a website and a web application using
+  HTML, CSS, and JavaScript.</p>
+  <p class="hire" id="hire3" style="display: none;">I know how to use the lastest frameworks such as Rails
+  for Ruby, Django for Python, and much more.</p>
+  <p class="hire" id="hire4" style="display: none;">I am very well verse and educated in computer science.</p>
+  <p class="hire" id="hire5" style="display: none;">I am able to scale website or application to fit all sizes including
+  mobile devices.</p>
+  <p class="hire" id="hire6" style="display: none;">I am certified in many programming languages including JavaScript, HTML 5, CSS, Java, and Python.</p>
+  <p class="hire" id="hire7" style="display: none;">I am also certified in networking and digitial media.</p>
+  <p class="hire" id="hire8" style="display: none;">I program complex algorithms which can manipulate the JavaScript DOM, code a web server with Ruby,
+    and build a calculator in python.</p>
+  <p class="hire" id="hire9" style="display: none;">I know how to use the industry standard software.</p>
+  <p class="hire" id="hire10" style="display: none;">I am a motivated and driven software developer.</p>
+
+
+  <br>
+  <div class="master">
   <div class="Pikachu" onclick="Pikachu();"  onmouseover="pikachuOn();" onmouseout="pikachuOff();" id="pikachu">
     <div class="inner">
       <img id="Pikachu" src="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png">
@@ -78,9 +99,36 @@
         <caption id="Porygon"> Porygon </caption>
     </div>
   </div>
-
-      </center>
+</div>
+<center>
+<br>
+<h4>Thank you for visiting my website. Have a nice day!</h4>
+<button id="credits">Credits</button>
+<br>
+<ul id="credit" style="display: none;">
+<div class="credit">
+<li class="credit">Pikachu image:
+  <a href="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png">https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png</a></li>
+<li class="credit">Charizard image:
+  <a href="https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png">https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png</a></li>
+<li class="credit">Blastoise image:
+  <a href="https://cdn.bulbagarden.net/upload/thumb/0/02/Blasty.png/230px-Blasty.png">https://cdn.bulbagarden.net/upload/thumb/0/02/Blasty.png/230px-Blasty.png</a></li>
+<li class="credit">Venusaur image:
+  <a href="https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png">https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png</a></li>
+<li class="credit">Haunter image:
+  <a href="https://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png">https://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png</a></li>
+<li class="credit">Porygon image:
+  <a href="https://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png">https://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png</a></li>
+</ul>
+</div>
+<br>
+</center>
   </body>
+  <center>
+  <footer>
+    <span> A product of Ultra Enterprize </span>
+  </footer>
+</center>
   <script type="text/javascript" src="js/index.js">
   </script>
 </html>

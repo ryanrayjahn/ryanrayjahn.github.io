@@ -135,3 +135,34 @@ td.Certification {
 td.Program {
   background-color: lightpink;
 }
+
+@keyframes color {
+0%  {text-shadow: 5px 5px 10px blue;}
+20% {text-shadow: 5px 5px 10px red;}
+40% {text-shadow: 5px 5px 10px pink;}
+60% {text-shadow: 5px 5px 10px yellow;}
+80% {text-shadow: 5px 5px 10px green;}
+100% {text-shadow: 5px 5px 10px blue;}
+}
+
+span{
+  font-size: 40px;
+  font-style: italic;
+}
+
+
+footer{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 10px blue;
+  box-shadow: 2px 2px;
+  width: 95%;
+  border: solid;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: grey;
+  text-align: center;
+  animation-name: color;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}

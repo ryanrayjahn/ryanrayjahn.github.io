@@ -51,6 +51,61 @@ document.body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/i
   }
 }
 
+
+$(document).ready(function(){
+    $("#credits").click(function(){
+    $("#credit").fadeToggle("slow");
+ });
+    $("#button").click(function(){
+        if (clicks == 1){
+          $("#hire1").fadeIn("slow");
+        }
+        else if (clicks == 2) {
+          $("#hire1").fadeOut("slow");
+          $("#hire2").fadeIn("slow");
+        }
+        else if (clicks == 3) {
+          $("#hire2").fadeOut("slow");
+          $("#hire3").fadeIn("slow");
+        }
+        else if (clicks == 4) {
+          $("#hire3").fadeOut("slow");
+          $("#hire4").fadeIn("slow");
+        }
+        else if (clicks == 5) {
+          $("#hire4").fadeOut("slow");
+          $("#hire5").fadeIn("slow");
+        }
+        else if (clicks == 6) {
+          $("#hire5").fadeOut("slow");
+          $("#hire6").fadeIn("slow");
+        }
+        else if (clicks == 7) {
+          $("#hire6").fadeOut("slow");
+          $("#hire7").fadeIn("slow");
+        }
+        else if (clicks == 8) {
+          $("#hire7").fadeOut("slow");
+          $("#hire8").fadeIn("slow");
+        }
+        else if (clicks == 9) {
+          $("#hire8").fadeOut("slow");
+          $("#hire9").fadeIn("slow");
+        }
+        else if (clicks == 10) {
+          $("#hire9").fadeOut("slow");
+          $("#hire10").fadeIn("slow");
+        }
+        else if (clicks == 0) {
+          $("#hire10").fadeOut("slow");
+          $("#hire1").fadeIn("slow");
+        }
+
+        });
+    });
+
+
+
 function hide(){
   document.getElementById('ghost').style.visibility = "hidden";
 }

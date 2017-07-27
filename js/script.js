@@ -17,9 +17,7 @@ alert("Welcome to my resume page!");
 
 else if (location.href.substring(locationLength - profile.length, locationLength) == profile){
 alert("Welcome to my profile page!");
-alert(x);
-alert(y);
-alert(z);
+
 }
 else {
 

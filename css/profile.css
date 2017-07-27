@@ -1,6 +1,6 @@
 .table{
     background-color: lightblue;
-    width: 100%;
+    width: 99%;
     border: 10px solid black;
     min-width: 1200px;
 }
@@ -11,7 +11,6 @@
   align-items: stretch;
   align-self: stretch;
   align-content: stretch;
-
 }
 
 .searchbox{
@@ -21,35 +20,55 @@
     font-size: 25px;
 }
 
-.topic{
-    width: 100px;
-    height: 40px;
-    font-size: 20px;
-    background-color: red;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-}
-
-.content{
-  width: 100px;
-  height: 40px;
-  font-size: 20px;
-  background-color: green;
-  color: black;
-  font-weight: bold;
-  text-align: center;
-}
-
-.searching{
-  width: 100px;
+.a{
+  width: 200px;
   height: 40px;
   font-size: 20px;
   background-color: yellow;
   color: black;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.e{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.c{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-color: green;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.p{
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  background-color: pink;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
 
 table {
     align-self: center;
@@ -110,7 +129,6 @@ td.Experience {
 
 td.Certification {
   background-color: lightgreen;
-  overflow: scroll;
 
 }
 

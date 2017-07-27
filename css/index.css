@@ -134,8 +134,12 @@ div:not(.navigation):not(.master):not(.credit){
 }
 
 div.master{
+  background-color: blue;
+  width: 100%;
   max-width: 2000px;
   min-width: 300px;
+  margin-bottom: 30px;
+  float: none;
 }
 
 div.poke-container{

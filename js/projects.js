@@ -1,3 +1,10 @@
+alert("hi");
+$(document).ready(function(){
+    $("#information").click(function(){
+    $("#info").fadeToggle("slow");
+  });
+});
+
 
 var fault = true;
 var win32 = false;
@@ -6,8 +13,6 @@ var mac32 = false;
 var mac64 = false;
 var linux32 = false;
 var linux64 = false;
-
-
 
 function move() {
   var x = document.getElementById("mySelect");

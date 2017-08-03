@@ -10,6 +10,11 @@ button.info{
   font-weight: bold;
 }
 
+.information{
+  text-align: center;
+  font-size: 25px;
+}
+
 div.projects{
   align-items: center;
   align-self: center;

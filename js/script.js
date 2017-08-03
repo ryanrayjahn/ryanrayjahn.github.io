@@ -2,6 +2,7 @@
 var home = "index.html";
 var resume = "resume.html";
 var profile = "profile.html";
+var projects = "projects.html"
 var locationLength = location.href.length;
 var x = "Total Width: " + screen.width;
 var y = "Total Width: " + screen.availWidth;
@@ -14,11 +15,15 @@ else if (location.href.substring(locationLength - resume.length, locationLength)
 alert("Welcome to my resume page!");
 }
 
-
 else if (location.href.substring(locationLength - profile.length, locationLength) == profile){
 alert("Welcome to my profile page!");
+}
+
+else if (location.href.substring(locationLength - projects.length, locationLength) == projects){
+alert("Welcome to my project page!");
 
 }
+
 else {
 
 }

@@ -61,43 +61,43 @@ $(document).ready(function(){
           $("#hire1").fadeIn("slow");
         }
         else if (clicks == 2) {
-          $("#hire1").fadeOut("slow");
+          $("#hire1").fadeOut("fast");
           $("#hire2").fadeIn("slow");
         }
         else if (clicks == 3) {
-          $("#hire2").fadeOut("slow");
+          $("#hire2").fadeOut("fast");
           $("#hire3").fadeIn("slow");
         }
         else if (clicks == 4) {
-          $("#hire3").fadeOut("slow");
+          $("#hire3").fadeOut("fast");
           $("#hire4").fadeIn("slow");
         }
         else if (clicks == 5) {
-          $("#hire4").fadeOut("slow");
+          $("#hire4").fadeOut("fast");
           $("#hire5").fadeIn("slow");
         }
         else if (clicks == 6) {
-          $("#hire5").fadeOut("slow");
+          $("#hire5").fadeOut("fast");
           $("#hire6").fadeIn("slow");
         }
         else if (clicks == 7) {
-          $("#hire6").fadeOut("slow");
+          $("#hire6").fadeOut("fast");
           $("#hire7").fadeIn("slow");
         }
         else if (clicks == 8) {
-          $("#hire7").fadeOut("slow");
+          $("#hire7").fadeOut("fast");
           $("#hire8").fadeIn("slow");
         }
         else if (clicks == 9) {
-          $("#hire8").fadeOut("slow");
+          $("#hire8").fadeOut("fast");
           $("#hire9").fadeIn("slow");
         }
         else if (clicks == 10) {
-          $("#hire9").fadeOut("slow");
+          $("#hire9").fadeOut("fast");
           $("#hire10").fadeIn("slow");
         }
         else if (clicks == 0) {
-          $("#hire10").fadeOut("slow");
+          $("#hire10").fadeOut("fast");
           $("#hire1").fadeIn("slow");
         }
 

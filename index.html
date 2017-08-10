@@ -1,224 +1,293 @@
-<!Doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-  <meta> </meta>
-  <title> Ryan's Website </title>
+<html>
 
-<style>
-  body{
-    background-color: lightblue;
-  }
+  <head>
 
-  footer{
-    background-color: blue;
-    border: 5px solid black;
-  }
+    <meta charset="utf-8">
 
-  iframe{
-  width: 100%;
-  height: 400px;
-  }
+    <title>Profile Page</title>
 
-  address{
-    font-size: 30px;
-    text-align: center;
-  }
+    <link rel="stylesheet" href="css/main.css">
 
-  h1 {
-    color: blue;
-    font-family: verdana;
-    font-size: 40px;
-    text-align: center;
-  }
-
-  h2{
-    margin: 50px;
-    color: green;
-    font-family: arial;
-    font-size: 30px;
-    text-align: left;
-  }
-
-  li{
-    margin: 25px;
-    font-family: times;
-    font-size: 20px;
-    text-align: left;
-  }
-
-  img{
-    border: 3px solid black;
-    background-color: green;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    width: 300px;
-    height: 200px;
-  }
-
-  img:hover{
-    border: 5px solid black;
-    background-color: red;
-  }
-
-  h2:hover{
-    color: red;
-  }
-
-  li:hover{
-    font-weight: bold;
-  }
-
-  input:focus{
-    background-color: yellow;
-  }
-
-  input.response:focus{
-    width: 50%;
-  }
-
-  p{
-    margin: 10px;
-    text-align: left;
-    font-size: 20px;
-  }
-
-  p:hover{
-    font-size: 20px;
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-  form.survey{
-    background-color: wheat;
-    padding: 10px 10px 10px 10px;
-    margin: 50px;
-  }
-
-  h3{
-    text-align: center;
-  }
-
-</style>
+    <script type="text/javascript" src="js/script.js">
 
 
-<script>
-function response(){
- alert("Thank you for the input.");
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
 
 
-  var input_one = document.forms["myForm"]["input_one"].value;
-  var input_two = document.forms["myForm"]["input_two"].value;
-  var input_three = document.forms["myForm"]["input_three"].value;
+
+  </head>
 
 
-   document.getElementById("input1").innerHTML = ("My favorite food is " + input_one + ".");
-   document.getElementById("input2").innerHTML = ("My favorite movie is " + input_two + "." );
-   document.getElementById("input3").innerHTML = ("My favorite video game is " + input_three + ".");
 
-}
-</script>
+  <body>
 
-</head>
+  <div id="navigation" class="navigation">
 
-<body>
-<h1>My Favorite Things:</h1>
-<br></br>
+  <nav>
 
-<iframe src="https://www.bing.com/">
-  <p> Your browser does not support iframe </p>
-</iframe>
+  <ul id="navigate" class="navigate">
 
-<h2> Food </h2>
-<ol>
-  <li> Fish </li>
-  <img src="http://www.donaldrussell.com/media/import/fish/fishLanding.jpg">
+  <li id="navigate" class="navigate"><a  class="navigate-active" href="index.html"> Home </a></li>
 
-  <li> Noodles </li>
-  <img src="https://www.gimmesomeoven.com/wp-content/uploads/2009/10/sesame-noodles.jpg">
+  <li id="navigate" class="navigate"><a  class="navigate" href="resume.html"> Resume </a></li>
 
-  <li> Pizza </li>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyFUVhWZJoCaSJ1-5_X_EzKiX3tMSCZNhOSJ3HSygaU1A-Ft9OUA">
-  <br> </br>
-</ol>
+  <li id="navigate" class="navigate"><a  class="navigate" href="profile.html"> Profile </a></li>
+
+  <li id="navigate" class="navigate"><a  class="navigate" href="projects.html"> Projects </a></li>
+
+  </ul>
+
+  </nav>
+
+  </div>
+
+  <h1>Ryan's Home Page</h1>
+
+  <hr />
+
+  <noscript>Please Enable JavaScript to your browser so JavaScript can function properly.</noscript>
+
+  <h3 id="hire">Why you should hire me?</h3>
+
+  <br>
+
+  <center>
+
+  <span id="size">Importance:</span><input id="scale" type="range" name="size" min="30" max="80" onchange="increaseScale();">
+
+  <input id="number" class="size" type="number" min="30" max="80" step="2" onchange="increaseNumber();">
+
+  </center>
+
+  <br>
+
+  <center><button value="Click Here" onclick="myFunction()" id="button">Click Here</button></center>
+
+  <br>
 
 
-<h2> Movies </h2>
+
+  <p class="hire" id="hire1" style="display: none;">I built various applications using Java, Python, and Ruby.</p>
+
+  <p class="hire" id="hire2" style="display: none;">I created and deployed a website and a web application using HTML, CSS, and JavaScript.</p>
+
+  <p class="hire" id="hire3" style="display: none;">I know how to use the latest frameworks such as Rails for Ruby, Django for Python, and plentiful more.</p>
+
+  <p class="hire" id="hire4" style="display: none;">I am very well verse and educated in computer science.</p>
+
+  <p class="hire" id="hire5" style="display: none;">I can scale websites and applications to fit all sizes including mobile devices.</p>
+
+  <p class="hire" id="hire6" style="display: none;">I am certified in multiple programming languages including JavaScript, HTML 5, CSS, Java, and Python.</p>
+
+  <p class="hire" id="hire7" style="display: none;">I am also certified in networking and digital media.</p>
+
+  <p class="hire" id="hire8" style="display: none;">I can program complex algorithms which can manipulate the JavaScript DOM, code a web server with Ruby, and build a calculator in Python.</p>
+
+  <p class="hire" id="hire9" style="display: none;">I know how to use the industry standard software.</p>
+
+  <p class="hire" id="hire10" style="display: none;">I am a motivated and driven software developer.</p>
+
+
+
+  <br>
+
+  <div class="master">
+
+  <div class="Pikachu" onclick="pikachu();"  onmouseover="pikachuOn();" onmouseout="pikachuOff();" id="pikachu">
+
+    <div class="inner">
+
+      <img id="Pikachu" src="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png" alt="Pikachu">
+
+      <p id="Pikachus"></p>
+
+      <caption id="Pikachu"> Pikachu </caption>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="Charizard" onclick="charizard();" onmouseover="charizardOn();" onmouseout="charizardOff();">
+
+    <div class="inner">
+
+        <img  id="Charizard" src="https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png" alt="Charizard">
+
+        <p id="Charizards"></p>
+
+        <caption id="Charizard"> Charizard </caption>
+
+      </div>
+
+  </div>
+
+
+
+  <div class="Blastoise" onclick="blastoise();" onmouseover="blastoiseOn();" onmouseout="blastoiseOff();">
+
+    <div class="inner">
+
+        <img id="Blastoise" src="https://cdn.bulbagarden.net/upload/thumb/0/02/Blasty.png/230px-Blasty.png" alt="Blastoise">
+
+        <p id="Blastoises"></p>
+
+        <caption id="Blastoise"> Blastoise </caption>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="Venusaur" onclick="venusaur();">
+
+    <div class="inner">
+
+        <img id="Venusaur" src="https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png" alt="Venusaur">
+
+        <p id="Venusaurs"></p>
+
+        <caption id="Venusaur"> Venusaur </caption>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="Haunter"  onmouseover="haunterin();" onmouseout="haunterout();">
+
+    <div class="inner">
+
+        <img id="ghost"src="https://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png" id="ghost" alt="Haunter">
+
+        <p id="Haunters"></p>
+
+        <input id="Haunter" type="button" name="" value="hide" onclick="hide();"> <input id="Haunter" type="button" name="" value="show" onclick="show();">
+
+        <br>
+
+        <caption id="Haunter"> Haunter </caption>
+
+    </div>
+
+  </div>
+
+
+
+  <div class="Porygon" onclick="porygon();">
+
+    <div class="inner">
+
+        <img id="Porygon" src="https://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png" alt="Porygon">
+
+        <p id="Porygons"></p>
+
+        <caption id="Porygon"> Porygon </caption>
+
+    </div>
+
+  </div>
+
+</div>
+
+<center>
+
+<br>
+
+
+
+<center>
+
+<h4>Thank you for visiting my website. Have a nice day!</h4>
+
+</center>
+
+<button id="credits">Credits</button>
+
+<br>
+
+<br>
+
+<div class="credit" id="credit" style="display: none;">
+
 <ul>
-  <li> <a href="https://en.wikipedia.org/wiki/The_Avengers_(2012_film)"> Marvel The Avengers </a> </li>
-  <img src="http://cdn.tvweb.com/img.news/NEIP7nST03epLO_1_2.jpg">
 
-  <li> <a href="https://en.wikipedia.org/wiki/Liar_Liar"> Liar Liar </a> </li>
-  <img src="https://upload.wikimedia.org/wikipedia/en/3/3d/Liar_Liar_poster.JPG">
+<left>
 
-  <li> <a href="https://en.wikipedia.org/wiki/Spider-Man"> Spiderman </a> </li>
-  <img src="http://cdn.empireonline.com/jpg/80/0/0/1000/563/0/north/0/0/0/0/0/c/features/58c9f431f1e8e048264efd18/spiderman-tobey1.jpg">
-  <br> </br>
+<li class="credit"><b>Background Image:</b>
+
+  <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd72fivorROnLsap72h1YevnYAmlMNXLD--JWR-I0YB8MWMJvjrg">https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd72fivorROnLsap72h1YevnYAmlMNXLD--JWR-I0YB8MWMJvjrg</a></li>
+
+<li class="credit"><b>Pikachu image:</b>
+
+  <a href="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png">https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png</a></li>
+
+<li class="credit"><b>Charizard image:</b>
+
+  <a href="https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png">https://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png</a></li>
+
+<li class="credit"><b>Blastoise image:</b>
+
+  <a href="https://cdn.bulbagarden.net/upload/thumb/0/02/Blasty.png/230px-Blasty.png">https://cdn.bulbagarden.net/upload/thumb/0/02/Blasty.png/230px-Blasty.png</a></li>
+
+<li class="credit"><b>Venusaur image:</b>
+
+  <a href="https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png">https://cdn.bulbagarden.net/upload/thumb/a/ae/003Venusaur.png/250px-003Venusaur.png</a></li>
+
+<li class="credit"><b>Haunter image:</b>
+
+  <a href="https://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png">https://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png</a></li>
+
+<li class="credit"><b>Porygon image:</b>
+
+  <a href="https://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png">https://cdn.bulbagarden.net/upload/thumb/6/6b/137Porygon.png/250px-137Porygon.png</a></li>
+
+<li class="credit"><b>Pikachu GIF:</b>
+
+  <a href="http://www.gifimagesdownload.com/wp-content/uploads/2016/03/Pokemon-gif-yellow.gif">http://www.gifimagesdownload.com/wp-content/uploads/2016/03/Pokemon-gif-yellow.gif</a></li>
+
+  <li class="credit"><b>Charizard GIF:</b>
+
+    <a href="http://i.imgur.com/wzdU7Cd.gif">http://i.imgur.com/wzdU7Cd.gif</a></li>
+
+    <li class="credit"><b>Blastoise GIF:</b>
+
+      <a href="https://media.giphy.com/media/14680Fohw5Zd8Q/giphy.gif">https://media.giphy.com/media/14680Fohw5Zd8Q/giphy.gif</a></li>
+
 </ul>
 
 
-<h2> Videos Games</h2>
-<ol>
-  <li> Mario Party 8</li>
-  <img src="http://vignette2.wikia.nocookie.net/nintendo/images/4/4c/Mario_Party_8_%28NA%29.jpg/revision/latest?cb=20071214140343&path-prefix=en">
 
-  <li> Super Paper Mario </li>
-  <img src="https://i.ytimg.com/vi/Y-vPJeV4Lvg/maxresdefault.jpg">
+</div>
 
-  <li> Monopoly </li>
-  <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/Monopoly_pack_logo.png">
-  <br> </br>
-</ol>
-<br></br>
-
-<hr />
-<h1>What are your favorite things:</h1>
-
-<h2> Please enter your response in the input boxes.</h2>
-
-<form name="myForm">
- <fieldset>
-<p> My Favorite Food: </p><input type ="text" name="input_one" class="response" value="" width="100px" height="15px">
- <br> </br>
-
- <p> My Favorite Movies: </p><input type ="text" class="response" name="input_two" value="" width="100px" height="15px">
- <br> </br>
-
-<p>My Favorite Video Game:</p><input type="text" class="response" name="input_three" value="" width="100px" height="15px">
- <br> </br>
-
-<input type="button"value="Response" onclick="return response();">
-<input type="reset" name="reset" >
-<noscript>Please enable JavaScript in your browser. Thank you!</noscript>
- <ul>
-<li id="input1"></li>
-<li id="input2"></li>
-<li id="input3"></li>
-</ul>
-</fieldset>
-</form>
-<br>
 <br>
 
-<form name="survey" class="survey">
-  <h1>Survey</h1>
-  <h3><strong><i> What is your favorite Certifications</i> </strong></h3>
-<input type="checkbox" value="none" checked> Prefer not to say <br>
-<input type="checkbox" value="CompTia"> CompTia <br>
-<input type="checkbox" value="Microsoft"> Microsoft <br>
-<input type="checkbox" value="Cisco"> Cisco <br>
-<br>
-<input type="submit" value="submit"> <br>
- <br>
-</form>
+</center>
 
-</body>
+  </body>
 
+  <center>
 
+  <footer>
 
-<footer>
-  <span><address>Ryan's Website</address></span>
-</footer>
+    <span> A product of Ultra Enterprize </span>
+
+  </footer>
+
+</center>
+
+  <script type="text/javascript" src="js/index.js">
+
+  </script>
+
 </html>

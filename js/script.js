@@ -8,15 +8,15 @@ var y = "Total Width: " + screen.availWidth;
 var z = document.getElementsByTagName("body").width;
 
 if (location.href.substring(locationLength - home.length, locationLength) == home){
-alert("Welcome to my Website!");
+//alert("Welcome to my Website!");
 }
 else if (location.href.substring(locationLength - resume.length, locationLength) == resume){
-alert("Welcome to my resume page!");
+//alert("Welcome to my resume page!");
 }
 
 
 else if (location.href.substring(locationLength - profile.length, locationLength) == profile){
-alert("Welcome to my profile page!");
+//alert("Welcome to my profile page!");
 
 }
 else {

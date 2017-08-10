@@ -1,4 +1,26 @@
 
+$(document).ready(function(){
+    $("#information").click(function(){
+    $("#info").fadeToggle("slow");
+  });
+});
+
+function info(){
+  document.getElementById('p1').innerHTML = "<b>Browser:</b> " + navigator.appName;
+  document.getElementById('p2').innerHTML = "<b>Browser Application:</b> " + navigator.appCodeName;
+  document.getElementById('p3').innerHTML = "<b>Browser Version:</b> " + navigator.appVersion;
+  document.getElementById('p4').innerHTML = "<b>User Agent:</b> " + navigator.userAgent;
+  document.getElementById('p5').innerHTML = "<b>Operating System:</b> " + navigator.platform;
+  if (navigator.javaEnabled() == false){
+  document.getElementById('p6').innerHTML = "<b>Is Java Enabled?</b> " + "Please enable Java to allow this " +
+  "game to work properly as intended.";
+}
+else{
+  document.getElementById('p6').innerHTML = "<b>Is Java Enabled?</b> " + "Java is enabled. Your download will " +
+  "run properly as intended."
+}
+}
+
 var fault = true;
 var win32 = false;
 var win64 = false;
@@ -6,8 +28,6 @@ var mac32 = false;
 var mac64 = false;
 var linux32 = false;
 var linux64 = false;
-
-
 
 function move() {
   var x = document.getElementById("mySelect");

@@ -1,193 +1,383 @@
-
   body{
+
     /* Blue */
+
     background-color: #2179FF;
+
   }
+
+
 
   div:not(.navigate), div:not(.navigation){
+
     background-color: white;
+
     border: solid;
+
     margin-left: 10px;
+
     margin-right: 10px;
+
   }
+
+
 
   div:hover:not(.navigate), div:hover:not(.navigation){
+
     background-color: yellow;
+
   }
+
+
 
   /* Animation code */
+
     @keyframes rotate {
+
     0%  {color: black; transform: rotate(0deg);}
+
     30%  {color: black; transform: rotate(0deg);}
+
     70% {color: black; transform: rotate(360deg);}
+
     75% {color: red; transform: rotate(360deg);}
+
     100% {color: black; transform: rotate(360deg);}
+
     }
 
+
+
     /* Animation code */
+
       @keyframes changes {
+
       0%  {color: black;}
+
       30%  {color: red;}
+
       70% {color: black;}
+
       75% {color: red;}
+
       100% {color: black}
+
       }
 
+
+
   h1{
+
     font-size: 50px;
+
     font-weight: bolder;
+
     text-align: center;
+
     animation-name: changes;
+
     animation-duration: 12s;
+
     animation-iteration-count: infinite;
+
   }
+
+
+
 
 
   h1:hover{
+
     text-decoration: underline;
+
   }
+
+
 
   @keyframes pusha {
+
     0% {transform: translateX(0%); }
+
     50% {transform: translateX(40%);}
+
     100% {transform: translateX(0%);}
 
+
+
   }
+
+
 
   @keyframes pushb {
+
     0% {transform: translateX(0%);}
+
     50% {transform: translateX(25%);}
+
     100% {transform: translateX(0%);}
 
+
+
   }
+
+
 
   h2.a:hover{
+
     text-decoration: underline;
+
     animation-name: pusha;
+
     animation-duration: 8s;
+
   }
+
+
 
     h2.b:hover{
+
     text-decoration: underline;
+
     animation-name: pushb;
+
     animation-duration: 8s;
+
   }
+
+
 
   h2{
+
     margin-left: 50px;
+
     font-family: verdana;
+
     font-size: 40px;
+
     font-weight: bold;
+
     text-align: left;
+
   }
+
+
 
   h3{
+
     margin-left: 50px;
+
     font-family: arial;
+
     font-size: 35px;
+
     font-weight: bold;
+
     text-align: left;
+
   }
+
+
 
   h4{
+
     margin-right: 50px;
+
     font-size: 35px;
+
     text-align: right;
+
   }
+
+
 
   table{
+
     align-self: center;
 
+
+
   }
+
+
 
   .right{
+
     width: 800px;
+
     align-self: center;
+
   }
+
+
 
   .left{
+
     background-color: red;
+
     width: 800px;
+
     border-right-style: solid;
+
     align-self: center;
+
   }
+
+
 
   img{
+
     width: 100%;
+
     min-width: 200px;
+
     height: 20em;
+
     min-height: 300px;
+
     max-height: 500px;
+
   }
+
+
 
   @keyframes flip{
+
     0%{transform: rotateY(0deg);}
+
     50%{transform: rotateY(180deg);}
+
     100%{transform: rotateY(0deg); }
+
   }
+
+
 
   img:hover{
+
     animation-name: flip;
+
     animation-duration: 5s;
+
     animation-iteration-count: infinite;
+
   }
+
+
 
   address{
+
     font-weight: bolder;
+
     margin-left: 50px;
+
     margin-right: 50px;
+
     font-size: 25px;
+
     text-align: left;
+
   }
+
+
 
   p{
+
     text-indent: 2em;
+
     margin-left: 50px;
+
     margin-right: 50px;
+
     font-size: 25px;
+
     text-align: left;
+
   }
+
+
 
   p.date{
+
     font-weight: bold;
+
     margin-right: 50px;
+
     font-size: 25px;
+
     text-align: right;
+
   }
+
+
 
   ul:not(.navigate){
+
     list-style-type: square;
+
   }
 
+
+
   li:not(.navigate){
+
     margin-left: 75px;
+
     margin-right: 50px;
+
     margin-bottom: 15px;
+
     font-size: 25px;
+
   }
+
+
+
 
 
   span{
+
     font-size: 40px;
+
     font-style: italic;
+
   }
+
+
+
 
 
   span:hover{
+
     text-decoration: underline;
+
   }
 
 
+
+
+
   input.top{
+
     border: solid black 1px;
+
     text-align: center;
+
     font-weight: bold;
+
     color: black;
+
     align-content: center;
+
     width: auto;
+
     padding: 5px;
+
     height: 50px;
+
     font-size: 20px;
+
     background-color: orange;
+
     margin-bottom: 10px;
+
   }

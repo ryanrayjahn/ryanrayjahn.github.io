@@ -1,137 +1,273 @@
 .table{
+
     background-color: lightblue;
+
     width: 99%;
+
     border: 10px solid black;
+
     min-width: 1200px;
+
 }
+
+
 
 .search{
+
   margin-top: 10px;
+
   margin-bottom: 10px;
+
   align-items: stretch;
+
   align-self: stretch;
+
   align-content: stretch;
+
 }
+
+
 
 .searchbox{
+
     width: 50%;
+
     min-width: 200px;
+
     height: 40px;
+
     font-size: 25px;
+
 }
+
+
 
 .a{
+
   width: 200px;
+
   height: 40px;
+
   font-size: 20px;
+
   background-color: yellow;
+
   color: black;
+
   font-weight: bold;
+
   text-align: center;
+
   margin-top: 20px;
+
   margin-bottom: 20px;
+
 }
+
+
 
 .e{
+
     width: 200px;
+
     height: 40px;
+
     font-size: 20px;
+
     background-color: orange;
+
     color: black;
+
     font-weight: bold;
+
     text-align: center;
+
     margin-top: 20px;
+
     margin-bottom: 20px;
+
 }
+
+
 
 .c{
+
   width: 200px;
+
   height: 40px;
+
   font-size: 20px;
+
   background-color: green;
+
   color: black;
+
   font-weight: bold;
+
   text-align: center;
+
   margin-top: 20px;
+
   margin-bottom: 20px;
+
 }
 
+
+
 .p{
+
   width: 200px;
+
   height: 40px;
+
   font-size: 20px;
+
   background-color: pink;
+
   color: black;
+
   font-weight: bold;
+
   text-align: center;
+
   margin-top: 20px;
+
   margin-bottom: 20px;
+
 }
+
+
+
+
 
 
 
 table {
+
     align-self: center;
+
     text-align: center;
+
     width: 100%;
+
     min-width: 500px;
+
     min-height: 500px;
+
     max-width: 100%;
+
     border: dotted black 3px;
+
 }
+
 th {
+
   border: 1px solid black;
+
   text-align: center;
+
   font-size: 30px;
+
   padding: 20px;
+
   align-self: center;
+
   height: 50px;
+
   min-width: 125px;
+
   max-width: 25%;
+
 }
+
 td {
+
   max-width: 25%;
+
   border: 1px solid black;
+
   text-align: center;
+
   font-size: 30px;
+
   padding: 20px;
+
   align-self: center;
+
   min-width: 125px;
+
 }
+
+
 
 th.Achievement {
+
   background-color: yellow;
+
 }
+
+
 
 th.Experience{
+
   background-color: orange
+
 }
+
+
 
 th.Certification {
+
   background-color: lightgreen;
+
 }
+
+
 
 th.Program {
+
   background-color: lightpink;
+
 }
+
+
 
 td.Achievement {
+
   background-color: yellow;
+
 }
+
+
 
 td:hover {
+
   font-weight: bold;
+
 }
+
+
 
 td.Experience {
+
   background-color: orange;
+
 }
+
+
 
 td.Certification {
+
   background-color: lightgreen;
+
+
 
 }
 
+
+
 td.Program {
+
   background-color: lightpink;
+
 }

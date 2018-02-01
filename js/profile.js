@@ -33,7 +33,25 @@ function myFunction() {
     if (td1) {
 
       if (achievement == true){
+      	if (filter.length < 1){
+      	 for (var each = 0; each < document.getElementsByClassName("Achievement").length; each++){
+          document.getElementsByClassName("Achievement")[each].style.display = "";
+      		document.getElementsByClassName("Experience")[each].style.display = "";
+      		document.getElementsByClassName("Certification")[each].style.display = "";
+      		document.getElementsByClassName("Program")[each].style.display = "";
+      	}
+      } 
 
+      else if (td1.innerHTML.toUpperCase().indexOf(filter) > -1 && $("body").outerWidth() < 900){
+      	for (var each = 0; each < document.getElementsByClassName("Achievement").length; each++){
+      		document.getElementsByClassName("Experience")[each].style.display = "none";
+      		document.getElementsByClassName("Certification")[each].style.display = "none";
+      		document.getElementsByClassName("Program")[each].style.display = "none";
+      	}
+
+      }
+
+      
       if (td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
 
         tr[i].style.display = "";
@@ -47,6 +65,25 @@ function myFunction() {
      }
 
      if (experience == true){
+
+     if (filter.length < 1){
+      	 for (var each = 0; each < document.getElementsByClassName("Experience").length; each++){
+      		document.getElementsByClassName("Achievement")[each].style.display = "";
+          document.getElementsByClassName("Experience")[each].style.display = "";
+      		document.getElementsByClassName("Certification")[each].style.display = "";
+      		document.getElementsByClassName("Program")[each].style.display = "";
+      	}
+      } 
+
+    else if (td1.innerHTML.toUpperCase().indexOf(filter) > -1 && $("body").outerWidth() < 900){
+      	for (var each = 0; each < document.getElementsByClassName("Experience").length; each++){
+      		document.getElementsByClassName("Achievement")[each].style.display = "none";
+      		document.getElementsByClassName("Certification")[each].style.display = "none";
+      		document.getElementsByClassName("Program")[each].style.display = "none";
+      	}
+
+      }
+
 
      if (td2.innerHTML.toUpperCase().indexOf(filter) > -1) {
 
@@ -62,6 +99,25 @@ function myFunction() {
 
     if (certification == true){
 
+    if (filter.length < 1){
+      	for (var each = 0; each < document.getElementsByClassName("Certification").length; each++){
+      		document.getElementsByClassName("Achievement")[each].style.display = "";
+      		document.getElementsByClassName("Experience")[each].style.display = "";
+          document.getElementsByClassName("Certification")[each].style.display = "";
+      		document.getElementsByClassName("Program")[each].style.display = "";
+      	}
+    } 
+
+    else if (td1.innerHTML.toUpperCase().indexOf(filter) > -1 && $("body").outerWidth() < 900){
+      	for (var each = 0; each < document.getElementsByClassName("Certification").length; each++){
+      		document.getElementsByClassName("Achievement")[each].style.display = "none";
+      		document.getElementsByClassName("Experience")[each].style.display = "none";
+      		document.getElementsByClassName("Program")[each].style.display = "none";
+      	}
+
+    }
+
+
     if (td3.innerHTML.toUpperCase().indexOf(filter) > -1) {
 
       tr[i].style.display = "";
@@ -75,6 +131,25 @@ function myFunction() {
    }
 
    if (program == true){
+   	
+    if (filter.length < 1){
+      	for (var each = 0; each < document.getElementsByClassName("Program").length; each++){
+      		document.getElementsByClassName("Achievement")[each].style.display = "";
+      		document.getElementsByClassName("Experience")[each].style.display = "";
+      		document.getElementsByClassName("Certification")[each].style.display = "";
+          document.getElementsByClassName("Program")[each].style.display = "";
+      	}
+    } 
+
+    else if (td1.innerHTML.toUpperCase().indexOf(filter) > -1 && $("body").outerWidth() < 900){
+      	for (var each = 0; each < document.getElementsByClassName("Program").length; each++){
+      		document.getElementsByClassName("Achievement")[each].style.display = "none";
+      		document.getElementsByClassName("Experience")[each].style.display = "none";
+      		document.getElementsByClassName("Certification")[each].style.display = "none";
+      	}
+
+    }
+
 
    if (td4.innerHTML.toUpperCase().indexOf(filter) > -1) {
 

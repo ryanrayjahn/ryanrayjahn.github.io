@@ -1,12 +1,10 @@
 .table{
 
     background-color: lightblue;
-
-    width: 99%;
-
+    box-sizing: border-box;
+    width: 100%;
     border: 10px solid black;
-
-    min-width: 1200px;
+    min-width: 400px;
 
 }
 
@@ -18,14 +16,8 @@
 
   margin-bottom: 10px;
 
-  align-items: stretch;
-
-  align-self: stretch;
-
-  align-content: stretch;
 
 }
-
 
 
 .searchbox{
@@ -39,7 +31,6 @@
     font-size: 25px;
 
 }
-
 
 
 .a{
@@ -65,7 +56,6 @@
 }
 
 
-
 .e{
 
     width: 200px;
@@ -87,7 +77,6 @@
     margin-bottom: 20px;
 
 }
-
 
 
 .c{
@@ -113,7 +102,6 @@
 }
 
 
-
 .p{
 
   width: 200px;
@@ -137,11 +125,6 @@
 }
 
 
-
-
-
-
-
 table {
 
     align-self: center;
@@ -150,9 +133,9 @@ table {
 
     width: 100%;
 
-    min-width: 500px;
+    min-width: 400px;
 
-    min-height: 500px;
+    min-height: 100px;
 
     max-width: 100%;
 
@@ -176,7 +159,7 @@ th {
 
   min-width: 125px;
 
-  max-width: 25%;
+  max-width: 100%;
 
 }
 
@@ -271,3 +254,55 @@ td.Program {
   background-color: lightpink;
 
 }
+
+
+@media screen and (max-width: 900px) {
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 800px
+and also iPads specifically.
+*/
+  /* Hide table header */
+  th{
+    display: none;
+  }
+
+  /* Force table to not be like tables anymore */
+  table, thead, tbody, td, tr { 
+    display: block; 
+  }
+  
+  
+  td { 
+    /* Behave  like a "row" */
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-bottom: 2px solid black; 
+    position: relative;
+    padding-left: 200px; 
+    min-width: 100%;
+  }
+  
+  td:before {
+    font-size: 24px; 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 25%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+  }
+  
+  /*
+  Label the data
+  */
+  td:before { 
+    content: attr(class); 
+}
+}
+
+
+
+

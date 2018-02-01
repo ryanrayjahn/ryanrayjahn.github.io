@@ -17,7 +17,7 @@ div.navigation{
   background-color: black;
 
   padding: 1px;
-
+  z-index: 10;
 
 
 }
@@ -35,7 +35,7 @@ nav{
 
 
 ul.navigate {
-
+  z-index: 10;
   border: solid black 5px;
 
   position: fixed;
@@ -73,6 +73,7 @@ ul.navigate {
 
 
 li.navigate{
+  z-index: 10;
 
   float: left;
 

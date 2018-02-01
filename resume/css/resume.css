@@ -29,6 +29,19 @@
   }
 
 
+  .a:hover{
+
+    text-decoration: underline;
+
+  }
+
+
+   .b:hover{
+
+    text-decoration: underline;
+
+  }
+
 
   /* Animation code */
 
@@ -122,27 +135,7 @@
 
 
 
-  h2.a:hover{
 
-    text-decoration: underline;
-
-    animation-name: pusha;
-
-    animation-duration: 8s;
-
-  }
-
-
-
-    h2.b:hover{
-
-    text-decoration: underline;
-
-    animation-name: pushb;
-
-    animation-duration: 8s;
-
-  }
 
 
 

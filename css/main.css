@@ -35,7 +35,10 @@ nav{
 
 
 ul.navigate {
+	box-sizing: border-box;
+
   z-index: 10;
+
   border: solid black 5px;
 
   position: fixed;
@@ -46,15 +49,11 @@ ul.navigate {
 
   width: 100%;
 
-  min-width: 500px;
+  min-width: 100%;
 
   list-style-type: none;
 
   margin: 0;
-
-  padding-left: 30%;
-
-  padding-right: 20%;
 
   overflow: hidden;
 
@@ -66,25 +65,44 @@ ul.navigate {
 
   text-align: center;
 
+  padding-left: 15%;
+
+
 }
 
 
-
-
-
 li.navigate{
+  box-sizing: border-box;
+
+  min-width: 20%;
+
+  max-width: 200px;
+
   z-index: 10;
 
   float: left;
 
   border-right: 2px solid blue;
 
-  font-size: 30px;
+}
+
+@media screen and (min-width: 901px) {
+	li.navigate{
+		font-size: 30px;
+	}
 
 }
 
+@media screen and (max-width: 900px) {
+	ul.navigate {
+		padding-left: 0px;
+	}
 
+	li.navigate{
+		font-size: 16px;
+	}
 
+}
 
 
 li.navigate:first-child{

@@ -4,7 +4,7 @@
     box-sizing: border-box;
     width: 100%;
     border: 10px solid black;
-    min-width: 400px;
+    min-width: 100%;
 
 }
 
@@ -133,7 +133,7 @@ table {
 
     width: 100%;
 
-    min-width: 400px;
+    min-width: 100%;
 
     min-height: 100px;
 
@@ -279,8 +279,9 @@ and also iPads specifically.
     border: 1px solid black;
     border-bottom: 2px solid black; 
     position: relative;
-    padding-left: 200px; 
+    padding-left: 170px; 
     min-width: 100%;
+    font-size: 18px;
   }
   
   td:before {

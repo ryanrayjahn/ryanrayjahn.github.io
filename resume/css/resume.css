@@ -3,6 +3,7 @@
     /* Blue */
 
     background-color: #2179FF;
+    box-sizing: border-box;
 
   }
 
@@ -17,6 +18,10 @@
     margin-left: 10px;
 
     margin-right: 10px;
+
+    box-sizing: border-box;
+
+    max-width: 100%;
 
   }
 
@@ -135,10 +140,6 @@
 
 
 
-
-
-
-
   h2{
 
     margin-left: 50px;
@@ -187,31 +188,35 @@
 
     align-self: center;
 
-
-
-  }
-
-
-
-  .right{
-
-    width: 800px;
-
-    align-self: center;
+    box-sizing: border-box;
 
   }
 
 
 
-  .left{
+  td.right{
+
+  width: 50%;
+
+  align-self: center;
+
+  box-sizing: border-box;
+
+  }
+
+
+
+  td.left{
 
     background-color: red;
 
-    width: 800px;
+    width: 50%;
 
     border-right-style: solid;
 
     align-self: center;
+
+    box-sizing: border-box;
 
   }
 
@@ -221,13 +226,15 @@
 
     width: 100%;
 
-    min-width: 200px;
+    min-width: 50%;
 
     height: 20em;
 
     min-height: 300px;
 
     max-height: 500px;
+
+    box-sizing: border-box;
 
   }
 
@@ -372,5 +379,52 @@
     background-color: orange;
 
     margin-bottom: 10px;
+
+    box-sizing: border-box;
+
+  }
+
+  @media screen and (max-width: 650px) {
+    h2{
+      font-size: 30px;
+    }
+
+    h3{
+      font-size: 25px;
+    }
+
+    a, address{
+      font-size: 16px;
+    }
+
+    p.date{
+      font-size: 20px;
+    }
+
+    p, li:not(.navigate){
+      font-size: 18px;
+    }
+
+    address, h2, h3, p, li:not(.navigate){
+      margin-left: 10px;
+    }
+
+  }
+
+    @media screen and (max-width: 500px) {
+    td.right{
+      display: none;
+    }
+
+    td.left{
+      border: none; 
+      min-width: 100%;
+      max-width: 100%;
+    }
+
+    table{
+      max-width: 100%;
+      margin: 0;
+    }
 
   }

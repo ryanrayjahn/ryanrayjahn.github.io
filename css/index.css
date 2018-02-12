@@ -387,8 +387,9 @@ div.inner{
 
 
 div.Pikachu{
+  width: 70%;
 
-  width: 300px;
+  max-width: 300px;
 
   height: 300px;
 
@@ -406,7 +407,9 @@ div.Pikachu{
 
 div.Charizard{
 
-  width: 300px;
+  width: 70%;
+
+  max-width: 300px;
 
   height: 300px;
 
@@ -424,7 +427,9 @@ div.Charizard{
 
 div.Blastoise{
 
-  width: 300px;
+  width: 70%;
+
+  max-width: 300px;
 
   height: 300px;
 
@@ -442,7 +447,9 @@ div.Blastoise{
 
 div.Venusaur{
 
-  width: 300px;
+  width: 70%;
+
+  max-width: 300px;
 
   height: 300px;
 
@@ -460,7 +467,9 @@ div.Venusaur{
 
 div.Haunter{
 
-  width: 300px;
+  width: 70%;
+
+  max-width: 300px;
 
   height: 300px;
 
@@ -478,7 +487,9 @@ div.Haunter{
 
 div.Porygon{
 
-  width: 300px;
+  width: 70%;
+
+  max-width: 300px;
 
   height: 300px;
 
@@ -496,7 +507,9 @@ div.Porygon{
 
 div.Meow{
 
-  width: 300px;
+  width: 70%;
+
+  max-width: 300px;
 
   height: 300px;
 

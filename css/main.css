@@ -263,6 +263,7 @@ span{
 
 
 footer{
+  box-sizing: border-box;
 
   margin-top: 50px;
 
@@ -272,7 +273,7 @@ footer{
 
   box-shadow: 2px 2px;
 
-  width: 90%;
+  width: 80%;
 
   border: solid;
 
